@@ -5,7 +5,7 @@
  * Copyright (c) 2013 Hugo Peixoto.
  * Distributed under the MIT License.
  */
-#include "routing/rule.h"
+#include "kiwi/routing/rule.h"
 
 using kiwi::routing::Rule;
 using kiwi::routing::MatchResult;

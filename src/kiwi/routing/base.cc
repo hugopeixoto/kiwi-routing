@@ -5,7 +5,7 @@
  * Copyright (c) 2013 Hugo Peixoto.
  * Distributed under the MIT License.
  */
-#include "routing/base.h"
+#include "kiwi/routing/base.h"
 
 #include <boost/regex.hpp>
 #include <iomanip>

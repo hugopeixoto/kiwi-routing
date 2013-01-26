@@ -13,8 +13,8 @@
 #include <map>
 #include <functional>
 
-#include "routing/rule.h"
-#include "routing/method.h"
+#include "kiwi/routing/rule.h"
+#include "kiwi/routing/method.h"
 
 namespace kiwi {
   namespace routing {
