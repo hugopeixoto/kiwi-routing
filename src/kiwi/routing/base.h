@@ -108,7 +108,8 @@ namespace kiwi {
         map(Method::POST, "/" + resource, &Controller::create).
         map(Method::PUT, "/" + resource + "/:id", &Controller::update).
         map(Method::DELETE, "/" + resource + "/:id", &Controller::destroy).
-        map(Method::GET, "/" + resource + "/:id", &Controller::show);
+        map(Method::GET, "/" + resource + "/:id", &Controller::show).
+        map(Method::GET, "/" + resource + "/:id/edit", &Controller::edit);
     }
   }
 }

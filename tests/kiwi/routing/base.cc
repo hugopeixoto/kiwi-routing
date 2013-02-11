@@ -27,6 +27,7 @@ class RestfulController {
   void update () {}
   void create () {}
   void destroy () {}
+  void edit () {}
 };
 
 TEST(KiwiRoutingBase, ShouldMapGETRoot)
@@ -144,6 +145,13 @@ TEST(KiwiRoutingBase, ShouldRecognizeResourcesShow)
   EXPECT_TRUE(Base().
     resources<RestfulController>("posts").
     recognize_path(Method::GET, "/posts/42"));
+}
+
+TEST(KiwiRoutingBase, ShouldRecognizeResourcesEdit)
+{
+  EXPECT_TRUE(Base().
+    resources<RestfulController>("posts").
+    recognize_path(Method::GET, "/posts/42/edit"));
 }
 
 TEST(KiwiRoutingBase, ShouldRecognizeResourcesUpdate)
